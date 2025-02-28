@@ -16,45 +16,56 @@
         android:orientation="vertical">
 
         <TextView
-            android:background="#004d4d"
             android:id="@+id/appTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
+            android:background="#004d4d"
+            android:fontFamily="@font/lato"
             android:paddingLeft="4dp"
-            android:text="Brain Sprint" />
+            android:text="Brain Sprint"
+            android:textColor="@color/white" />
 
         <EditText
             android:id="@+id/searchQuery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:textColorHint="@color/main"
-            android:text="Enter search query here" />
+            android:backgroundTint="#004d4d"
+            android:fontFamily="@font/lato"
+            android:text="Enter search query here"
+
+            />
 
         <LinearLayout
             android:id="@+id/tagQueryGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
             android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="4dp">
 
             <EditText
                 android:id="@+id/tagQuery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
+                android:backgroundTint="#004d4d"
+                android:fontFamily="@font/lato"
                 android:text="Tag your query" />
 
             <Button
                 android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:backgroundTint="#008080"
-                android:text="Save" />
+                android:backgroundTint="@color/main"
+                android:fontFamily="@font/lato"
+                android:text="Save"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                app:strokeColor="#056F6F"
+                app:strokeWidth="1dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -62,7 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#80008080"
+            android:background="#40008080"
             android:orientation="vertical"
             android:padding="4dp">
 
@@ -70,7 +81,9 @@
                 android:id="@+id/taggedSearchesText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato"
                 android:text="Tagged Searches"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -99,17 +112,528 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
-                            android:text="Android"
-                            android:layout_marginRight="4dp"/>
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 1"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
 
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:backgroundTint="@color/main"
-                            android:text="Edit" />
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 2"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 3"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 4"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 5"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 6"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 7"
+                            android:textSize="16sp"
+                            android:textStyle=""
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 8"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 9"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 10"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 11"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="#008080"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 12"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 13"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 14"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="7"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Tag 15"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/main"
+                            android:fontFamily="@font/lato"
+                            android:text="Edit"
+                            android:textSize="16sp"
+
+                            app:cornerRadius="8dp"
+                            app:strokeColor="#056F6F"
+                            app:strokeWidth="1dp" />
 
                     </LinearLayout>
 
@@ -123,7 +647,17 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Clear Tags" />
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:backgroundTint="@color/main"
+            android:elevation="4dp"
+            android:fontFamily="@font/lato"
+            android:text="Clear Tags"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            app:strokeColor="#056F6F"
+            app:strokeWidth="1dp" />
 
 
     </LinearLayout>
