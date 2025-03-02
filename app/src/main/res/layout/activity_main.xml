@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="4dp"
+    android:background="@color/black"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -21,7 +22,7 @@
             android:layout_height="wrap_content"
             android:background="#004d4d"
             android:fontFamily="@font/lato"
-            android:paddingLeft="4dp"
+            android:padding="4dp"
             android:text="Brain Sprint"
             android:textColor="@color/white" />
 
@@ -32,7 +33,9 @@
             android:layout_margin="4dp"
             android:backgroundTint="#004d4d"
             android:fontFamily="@font/lato"
-            android:text="Enter search query here"
+            android:hint="Enter search query here"
+            android:textColor="@color/white"
+            android:textColorHint="#607373"
 
             />
 
@@ -40,6 +43,7 @@
             android:id="@+id/tagQueryGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
             android:gravity="center"
             android:orientation="horizontal"
             android:padding="4dp">
@@ -51,20 +55,24 @@
                 android:layout_margin="4dp"
                 android:layout_weight="2"
                 android:backgroundTint="#004d4d"
+                android:contentDescription="Taaaaag"
                 android:fontFamily="@font/lato"
-                android:text="Tag your query" />
+                android:hint="Tag your query"
+                android:textColor="@color/white"
+                android:textColorHint="#607373" />
 
             <Button
                 android:id="@+id/btnSave"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/main"
+                android:backgroundTint="#0F5738"
                 android:fontFamily="@font/lato"
                 android:text="Save"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:cornerRadius="8dp"
-                app:strokeColor="#056F6F"
+                app:strokeColor="#0C462D"
                 app:strokeWidth="1dp" />
         </LinearLayout>
 
@@ -73,11 +81,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#40008080"
+            android:background="#20008080"
             android:orientation="vertical"
             android:padding="4dp">
 
             <TextView
+
                 android:id="@+id/taggedSearchesText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -86,7 +95,7 @@
                 android:fontFamily="@font/lato"
                 android:text="Tagged Searches"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />
 
@@ -115,8 +124,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 1"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -129,6 +140,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -150,8 +162,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 2"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -164,6 +178,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -185,8 +200,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 3"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -199,6 +216,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -220,8 +238,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 4"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -234,6 +254,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -255,8 +276,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 5"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -269,6 +292,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -290,8 +314,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 6"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -304,6 +330,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -325,8 +352,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 7"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle=""
                             app:cornerRadius="8dp"
@@ -340,6 +369,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -361,8 +391,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 8"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -375,6 +407,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -396,8 +429,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 9"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -410,6 +445,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -431,8 +467,10 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 10"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -445,8 +483,8 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -467,10 +505,11 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 11"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -482,8 +521,8 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -504,10 +543,11 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="#008080"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 12"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -519,8 +559,8 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -541,10 +581,11 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 13"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -556,8 +597,8 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -578,10 +619,11 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 14"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -593,6 +635,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
@@ -614,10 +657,11 @@
                             android:layout_marginRight="4dp"
                             android:layout_weight="7"
                             android:backgroundTint="@color/main"
+                            android:enabled="false"
                             android:fontFamily="@font/lato"
                             android:text="Tag 15"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
-
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
                             app:strokeWidth="1dp" />
@@ -629,6 +673,7 @@
                             android:backgroundTint="@color/main"
                             android:fontFamily="@font/lato"
                             android:text="Edit"
+                            android:textColor="@color/white"
                             android:textSize="16sp"
 
                             app:cornerRadius="8dp"
@@ -649,14 +694,16 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
-            android:backgroundTint="@color/main"
+            android:backgroundTint="#5B0B14"
             android:elevation="4dp"
+            android:layout_margin="4dp"
             android:fontFamily="@font/lato"
             android:text="Clear Tags"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             app:cornerRadius="8dp"
-            app:strokeColor="#056F6F"
+            app:strokeColor="#490910"
             app:strokeWidth="1dp" />
 
 
