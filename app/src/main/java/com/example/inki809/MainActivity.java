@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         btnSave = findViewById(R.id.btnSave);
         clearButton = findViewById(R.id.clearButton);
 
-        copyAssetFileToInternalStorage("recnik.txt"); // Copy on first run
+        copyAssetFileToInternalStorage("recnik.txt");
 
         searchQuery.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
