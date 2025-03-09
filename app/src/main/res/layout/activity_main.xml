@@ -26,18 +26,15 @@
             android:text="Dictionary"
             android:textColor="@color/white" />
 
-        <EditText
+        <SearchView
             android:id="@+id/searchQuery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:backgroundTint="#004d4d"
+            android:backgroundTint="#004D4D"
             android:fontFamily="@font/lato"
-            android:hint="Enter your word here"
             android:textColor="@color/white"
-            android:textColorHint="#607373"
-
-            />
+            android:textColorHint="#607373" />
 
         <LinearLayout
             android:id="@+id/tagQueryGroup"
@@ -92,7 +89,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/lato"
-                android:text="Matched words"
+                android:text="Translation"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20dp"
@@ -110,14 +107,14 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-
+                        android:id="@+id/translationContainer"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:orientation="horizontal">
 
-                        <Button
+                        <!--<Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="4dp"
@@ -143,7 +140,7 @@
                             android:textSize="16sp"
                             app:cornerRadius="8dp"
                             app:strokeColor="#056F6F"
-                            app:strokeWidth="1dp" />
+                            app:strokeWidth="1dp" />-->
 
                     </LinearLayout>
                 </LinearLayout>
@@ -153,6 +150,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/clearButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
