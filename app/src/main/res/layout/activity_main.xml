@@ -105,7 +105,6 @@
                 android:fillViewport="true">
 
                 <LinearLayout
-                    android:id="@+id/resultsContainer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
@@ -119,7 +118,6 @@
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/resultWord"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginRight="4dp"
@@ -155,7 +153,6 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnClear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
