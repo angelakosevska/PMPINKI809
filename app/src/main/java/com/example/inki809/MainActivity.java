@@ -2,6 +2,7 @@ package com.example.inki809;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 if (query != null) {
-                    searchAndDisplayTranslation(query);
+                    searchAndDisplayTranslation(query.trim());
                 }
                 return false;
             }
@@ -119,16 +120,10 @@ public class MainActivity extends AppCompatActivity {
                     String translation = parts[1].trim();
 
                     if (word.equalsIgnoreCase(query)) {
-                        TextView textView = new TextView(this);
-                        textView.setText(translation);
-                        textView.setTextColor(getResources().getColor(R.color.white, getTheme()));
-                        translationContainer.addView(textView);
+                        addButtonToContainer(word + " -> " + translation);
                         translationFound = true;
                     } else if (translation.equalsIgnoreCase(query)) {
-                        TextView textView = new TextView(this);
-                        textView.setText(word);
-                        textView.setTextColor(getResources().getColor(R.color.white, getTheme()));
-                        translationContainer.addView(textView);
+                        addButtonToContainer(query + " -> " + word);
                         translationFound = true;
                     }
                 }
@@ -141,11 +136,27 @@ public class MainActivity extends AppCompatActivity {
         if (!translationFound) {
             TextView noTranslation = new TextView(this);
             noTranslation.setText("No translation found");
-            noTranslation.setTextColor(getResources().getColor(R.color.white, getTheme()));
+
+            // Set text size (in scaled pixels - sp)
+            noTranslation.setTextSize(20); // Adjust the size as needed
+
+            // Set text color
+            noTranslation.setTextColor(getResources().getColor(R.color.red, getTheme())); // Change to your desired color
+
             translationContainer.addView(noTranslation);
         }
+        searchQuery.clearFocus();
+        searchQuery.setQuery("", false); // clear the text
+        searchQuery.setIconified(true);
     }
 
+    private void addButtonToContainer(String text) {
+        LayoutInflater inflater = LayoutInflater.from(this);
+        Button translationButton = (Button) inflater.inflate(R.layout.btnresult, translationContainer, false);
+        translationButton.setText(text);
+        translationContainer.addView(translationButton);
+
+    }
     private void addNewWord(String word1, String word2) {
         File file = new File(getFilesDir(), "recnik.txt");
         String filePath = file.getAbsolutePath();

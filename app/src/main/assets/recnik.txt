@@ -1,6 +1,5 @@
 apple, јаболко
 banana, банана
-apple, јаболко
 cat, мачка
 dog, куче
 house, куќа
