@@ -19,7 +19,6 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -136,17 +135,13 @@ public class MainActivity extends AppCompatActivity {
         if (!translationFound) {
             TextView noTranslation = new TextView(this);
             noTranslation.setText("No translation found");
-
-            // Set text size (in scaled pixels - sp)
-            noTranslation.setTextSize(20); // Adjust the size as needed
-
-            // Set text color
-            noTranslation.setTextColor(getResources().getColor(R.color.red, getTheme())); // Change to your desired color
+            noTranslation.setTextSize(20);
+            noTranslation.setTextColor(getResources().getColor(R.color.red, getTheme()));
 
             translationContainer.addView(noTranslation);
         }
         searchQuery.clearFocus();
-        searchQuery.setQuery("", false); // clear the text
+        searchQuery.setQuery("", false);
         searchQuery.setIconified(true);
     }
 
